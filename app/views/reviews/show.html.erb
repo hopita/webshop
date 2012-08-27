@@ -1,0 +1,24 @@
+<h1 class="interior columna-triple margen20">Showing review</h1>
+
+<div class=" columna-triple-expandida filete-superior-fino margen20">
+<p id="notice"><%= notice %></p>
+
+<p>
+
+  <%= @review.sumary %>
+</p>
+  <div class=" columna-simple-expandida margen filete-superior-grueso">
+<p>
+  <b>Description:</b>
+  <%= @review.description %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @review.rating %>
+</p>
+
+<span class="edit"><%= link_to 'Editar',   edit_review_path(@review)  %></span>
+    <span class="back"><%= link_to 'Back', :back %></span>
+  </div>
+</div>

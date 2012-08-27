@@ -1,0 +1,249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+    color: #3a3021;
+    font: 12px Arial,Helvetica,sans-serif;
+    margin: 0;
+}
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+
+
+.filete-superior-grueso {
+    border-top: 10px solid #000000;
+}
+
+.filete-inferior-grueso {
+    border-bottom: 10px solid #000000;
+}
+
+.filete-inferior-fino {
+    border-bottom: 1px solid #000000;
+}
+
+div {
+&.field, &.actions {
+    margin-bottom: 10px;
+}
+    }
+
+#notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+ul{
+    margin:0;
+    list-style:none;
+
+}
+
+#contenedor-menu ul{
+    margin: 0 auto;
+    width: 900px;
+    line-height: 39px;
+}
+
+#contenedor-menu ul li{
+    float:left;
+    margin-right: 20px;
+}
+
+#contenedor-menu ul li a{
+    color:#ffffff;
+}
+
+tr{
+    border-bottom: 1px solid #999999;
+    font: 13px Arial,sans-serif;
+    padding: 10px;
+
+}
+
+h1.interior {
+    color: #3a2503;
+    font-family: Arial,sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    margin: 20px 0 0;
+}
+.margen20 {
+    margin-bottom: 20px !important;
+}
+.columna-triple {
+    float: left;
+    width: 760px;
+}
+h1,h2, h3, h4, h5, h6 {
+    color: #3A2503;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+th{
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    width: 24%;
+    text-align: left;
+    color: #96600F;
+}
+
+td{
+
+    text-align: left;
+}
+
+#contenedor-menu {
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 40px;
+}
+
+#contenedor {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 900px;
+}
+
+#cabecera {
+    float: left;
+    height: 150px;
+    width: 900px;
+}
+
+.show{
+
+}
+
+.show a{
+    display: block;
+    height: 16px;
+    text-indent: -50000px;
+    width: 24px;
+    background: url(eye.png) no-repeat transparent top center;
+    float: left;
+}
+
+.edit{
+
+}
+
+.edit a{
+    display: block;
+    height: 23px;
+    text-indent: -50000px;
+    width: 23px;
+    background: url(pencil.png) no-repeat transparent top center;
+    float: left;
+}
+
+.back a{
+    display: block;
+    height: 26px;
+    text-indent: -50000px;
+    width: 24px;
+    background: url(back.png) no-repeat transparent top center;
+    float: right;
+
+}
+
+.destroy{
+
+}
+
+.destroy a{
+    display: block;
+    height: 24px;
+    text-indent: -50000px;
+    width: 24px;
+    background: url(delete.jpg) no-repeat transparent top center;
+}
+
+#alta{
+    border: 1px solid #666666;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 20%;
+}
+
+
+
+.filete-superior-fino {
+    border-top: 1px solid #524023;
+}
+.margen20 {
+    margin-bottom: 20px !important;
+}
+.columna-triple-expandida {
+    float: left;
+    width: 900px;
+
+}
+
+.name{
+    font-size: 20px;
+}
+
+label, legend {
+    line-height: 29px;
+    font-size: 18px;
+    margin: 16px 0 5px;
+    width: 497px;
+}
+
+.columna-simple-expandida {
+    padding-top: 20px;
+    width: 374px;
+    margin-top: 41px;
+
+}
+
+.columna-doble-expandida {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 637px;
+}
+
+table{
+    width:100%;
+}
+
+form{
+    margin-top:20px;
+}

@@ -1,0 +1,24 @@
+<h1 class="interior columna-triple margen20">Showing user</h1>
+
+<div class=" columna-triple-expandida filete-superior-fino margen20">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @user.mail %>
+</p>
+
+<%= render @user.reviews %>
+  <span class="edit"><%= link_to 'Edit', edit_user_path(@user) %> </span>
+<span class="back"><%= link_to 'Back', users_path %> </span>
+</div>

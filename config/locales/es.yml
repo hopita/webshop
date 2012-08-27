@@ -1,0 +1,7 @@
+es:
+  hello: "Hola"
+  otro:
+      global:
+        welcome: "Bienvenido %{user_name} "
+  product:
+    category: "Categoría"

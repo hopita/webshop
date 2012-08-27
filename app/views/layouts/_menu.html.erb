@@ -1,0 +1,19 @@
+<div id="contenedor-menu">
+   <ul>
+     <li><%= link_to 'PRODUCTOS', products_path %> </li>
+     <li><%= link_to 'RESEÑAS', reviews_path %></li>
+     <li><%= link_to 'USUARIOS', users_path %></li>
+     <% if logged_in? %>
+
+         <li>Hi, <%=  t('otro.global.welcome', user_name: current_user.mail)  %>
+           <%= "nombre: #{current_user.first_name} apellidos: #{current_user.last_name}" %></li>
+         <li><%= link_to 'Logout', logout_path %></li>
+     <% else %>
+        <li><%= link_to 'Login', new_session_path %></li>
+     <% end %>
+
+
+
+   </ul>
+
+</div>

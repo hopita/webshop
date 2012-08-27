@@ -1,0 +1,8 @@
+<tr>
+  <td width="20%"><%= review.sumary %></td>
+  <td width="50%"><%= review.description %></td>
+  <td width="15%"><%= review.rating %></td>
+  <td class="show"><%= link_to 'Show', review %></td>
+  <td class="edit"><%= link_to 'Editar',   edit_review_path(review)  %></td>
+  <td class="destroy"><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

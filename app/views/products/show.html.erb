@@ -1,0 +1,66 @@
+<h1 class="interior columna-triple margen20">Showing product</h1>
+
+<div class=" columna-triple-expandida filete-superior-fino margen20">
+<p id="notice"><%= notice %></p>
+
+
+<p class="name columna-doble-expandida margen filete-inferior-grueso">
+  <%= @product.name %>
+</p>
+  <div>
+<p>
+  <b><%= t('product.category') %>:</b>
+  <%= @product.category %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @product.brand %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @product.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @product.price %>
+</p>
+<h1 class=" columna-doble-expandida margen20 filete-superior-fino ">Reviews</h1>
+<table cellspacing="10" >
+  <tr>
+    <th width="20%">Summary</th>
+    <th width="50%">Description</th>
+    <th width="15%">Rating</th>
+    <th width="5%"></th>
+    <th width="5%"></th>
+    <th width="5%"></th>
+  </tr>
+<%= render @product.reviews %>
+</table>
+
+    <h2  class="columna-simple-expandida margen20 filete-superior-fino" >Add a review</h2>
+    <%= form_for([@product, @product.reviews.build]) do |f| %>
+        <div class="field">
+          <%= f.label :sumary %><br />
+          <%= f.text_field :sumary %>
+        </div>
+        <div class="field">
+          <%= f.label :description %><br />
+          <%= f.text_area :description %>
+        </div>
+        <div class="field">
+          <%= f.label :rating %><br />
+          <%= f.number_field :rating %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+    <% end %>
+
+    <span class="back"><%= link_to 'Back', :back %> </span>
+
+ </div>
+    </div>

@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  otro:
+    hello_again: "Hello world...again"
+    another_one:
+      good_bye: 'Que te den'
+    global:
+      welcome: "Welcome %{user_name} "
+
+  Products:
+    show:
+      title:
+        one: "Producto: %{product_name}. It has %{reviews}"
+        other: "Producto: %{product_name}. It has %{reviews}"
